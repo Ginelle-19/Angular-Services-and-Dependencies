@@ -1,17 +1,16 @@
 import { Component, VERSION } from '@angular/core';
-import {MyServiceService} from './my-service.service';
+import { MyServiceService } from './my-service.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls:['./app.component.css']
-
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent{
+export class AppComponent {
   title = 'middemo';
   todaydate;
-  constructor(private myservice:MyServiceService){}
-  ngOnInit(){
-    this.todaydate = this.myservice.showTodayDate()
+  constructor(private myservice: MyServiceService) {}
+  ngOnInit() {
+    this.todaydate = this.myservice.showTodayDate();
   }
 }
 // @Component({
@@ -38,4 +37,3 @@ export class AppComponent{
 //       console.log($event.target.value);
 //     }
 //   }
-}
