@@ -9,4 +9,5 @@ export class MyServiceService {
     let ndate = new Date();
     return ndate;
   }
+  serviceproperty = 'Service Created';
 }
