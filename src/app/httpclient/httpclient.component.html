@@ -1,0 +1,47 @@
+<!-- <p>httpclient works!</p> -->
+
+<h2>List from Main</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Website</th>
+  </tr>
+  <td>
+    <tr *ngFor="let users of httpusers">
+      {{
+        users.id
+      }}
+    </tr>
+  </td>
+  <td>
+    <tr *ngFor="let users of httpusers">
+      {{
+        users.name
+      }}
+    </tr>
+  </td>
+  <td>
+    <tr *ngFor="let users of httpusers">
+      {{
+        users.username
+      }}
+    </tr>
+  </td>
+  <td>
+    <tr *ngFor="let users of httpusers">
+      {{
+        users.email
+      }}
+    </tr>
+  </td>
+  <td>
+    <tr *ngFor="let users of httpusers">
+      {{
+        users.website
+      }}
+    </tr>
+  </td>
+</table>
