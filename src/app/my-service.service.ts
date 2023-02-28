@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class MyServiceService {
-
-  constructor() { }
-
+  constructor() {}
+  showTodayDate() {
+    let ndate = new Date();
+    return ndate;
+  }
 }
