@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MyServiceService } from './../my-service.service';
 @Component({
   selector: 'app-new-cmp',
   templateUrl: './new-cmp.component.html',
-  styleUrls: ['./new-cmp.component.css']
+  styleUrls: ['./new-cmp.component.css'],
 })
 export class NewCmpComponent implements OnInit {
-
-  constructor() { }
+  todaydate;
+  newcomponent = 'Entered in newcomponent';
+  constructor(private myservice: MyServiceService) {}
 
   ngOnInit() {
+    this.todaydate = this.myservice.showTodayDate();
   }
-
 }
