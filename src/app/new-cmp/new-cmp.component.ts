@@ -7,6 +7,7 @@ import { MyServiceService } from './../my-service.service';
 })
 export class NewCmpComponent implements OnInit {
   todaydate;
+  newcomponentproperty;
   newcomponent = 'Entered in newcomponent';
   constructor(private myservice: MyServiceService) {}
 

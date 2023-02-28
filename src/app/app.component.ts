@@ -8,12 +8,13 @@ import { MyServiceService } from './my-service.service';
 export class AppComponent {
   title = 'middemo';
   todaydate;
+  // serviceproperty;
   componentproperty;
   constructor(private myservice: MyServiceService) {}
   ngOnInit() {
     this.todaydate = this.myservice.showTodayDate();
     console.log(this.myservice.serviceproperty);
-    this.myservice.servciceproperty = 'component created';
+    this.myservice.serviceproperty = 'component created';
     this.componentproperty = this.myservice.serviceproperty;
   }
 }
